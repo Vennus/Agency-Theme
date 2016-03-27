@@ -71,7 +71,7 @@ header{
 	}
 	.text-services{
 		margin-bottom: 5%;
-		h3{
+		h2{
 			font-weight: bold;
 		}
 		p{
@@ -99,7 +99,7 @@ header{
 	padding-top:10%;
 	text-align:center;
 	font-family:Montserrat;
-	h3{
+	h2{
 		font-weight: bold;
 	}
 	p{
@@ -121,12 +121,131 @@ header{
 		}
 	}
 }
-/*FOOTER*/
-.bg-footer{
+/*ABOUT US*/
+#about{
+	img{
+		margin-bottom: 25%;
+		border-radius:100px;
+		width: 80%;
+		border:4px solid #F1F1F1;
+	}
+	.text-left{
+		position:relative;
+		left: 650px;
+	}
+}
+/*TEAM*/
+.team{
+	text-align:center;
+	padding:10% 0;
+	background:#F7F7F7;
+	h2{
+		font-weight: bold;
+	}
+	p,span{
+		font-family: Droid Serif;
+		color: #828597;
+	}
+	p:nth-child(3){
+		padding:0 20%;
+		margin-top: 5%;
+	}
+	img{
+		margin-top: 10%;
+		width: 60%;
+		border-radius:100%;
+		border:5px solid white;
+	}
+	li{
+		list-style: none;
+		display: inline-block;
+		text-align: center;
+	}
+	.social-media{
+		margin-top: 5%;
+	}
+	.icon-circle{
+		border-radius: 100%;
+	    background-color: #303333;
+	    color: white;
+	    font-size: 1.2em;
+	    position: relative;
+	    display: inline-block;
+	    width: 1.7em;
+	    height: 1.7em;
+	    line-height: 1.9em;
+	    vertical-align: middle;
+	    margin: 0 2%;
+	}
+}
+/*LOGOS*/
+.logos{
+	padding:5% 0;
+	img{
+		width: 80%;
+	}
+}
+/*CONTACT US*/
+.bg-contact{
 	background:black;
-	background-image:url('../../img/map-image.png')
+	background-image:url('../../img/map-image.png');
 	background-repeat: no-repeat;
 	background-size:100%;
 	height:50%;
-	padding:23% 5px;
+	padding:8% 5px;
+	h2{
+		font-weight: bold;
+		color:white;
+		text-align: center;
+	}
+	p{
+		font-family: Droid Serif;
+		color: white;
+		text-align: center;
+		font-style: italic;
+		margin-bottom: 5%;
+	}
+	input{
+		width: 85%;
+		margin-bottom: 5%;
+		float: right;
+		padding:2% 2%;
+		border-radius:5px;
+		border:0px;
+	}
+	textarea{
+		border:0;
+		border-radius:5px;
+		padding:4% 0 0 3%;
+	}
+}
+/*FOOTER*/
+footer{
+	padding:3% 0;
+	p{
+		color:black;
+	}
+	.social-circle{
+		border-radius: 100%;
+		background-color: #303333;
+		color: white;
+		font-size: 1.2em;
+	    position: relative;
+	    display: inline-block;
+	    width: 1.7em;
+	    height: 1.7em;
+	    line-height: 1.9em;
+	    margin: 0 2%;
+	    text-align: center;
+	    &:hover{
+	    	color:#FED136;
+	    }
+	}
+	a{
+		text-decoration:none;
+		color:#FED136;
+		&:hover{
+			color:black;
+		}
+	}
 }

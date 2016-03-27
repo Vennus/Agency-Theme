@@ -1,51 +1,201 @@
-/*
-Error: Invalid CSS after "	background-image:": expected "{", was "url('../../img/..."
-        on line 127 of sass/main.scss
+header .navbar-default .navbar-collapse {
+  padding: 5px; }
+header .navbar-default {
+  background: rgba(0, 0, 0, 0.28);
+  border: 0; }
+  header .navbar-default .navbar-nav li {
+    padding-top: 2%; }
+    header .navbar-default .navbar-nav li a {
+      color: white;
+      font-weight: bold; }
+header h1 {
+  margin-top: 1%;
+  font-size: 1.8em;
+  color: #FED136;
+  font-family: Kaushan Script; }
 
-122: 	}
-123: }
-124: /*FOOTER*\/
-125: .bg-footer{
-126: 	background:black;
-127: 	background-image:url('../../img/map-image.png')
-128: 	background-repeat: no-repeat;
-129: 	background-size:100%;
-130: 	height:50%;
-131: 	padding:23% 5px;
-132: }
+.bg-agency {
+  background: url("../../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 50%;
+  padding: 23% 5px;
+  text-align: center;
+  color: white; }
+  .bg-agency h2 {
+    font-family: Droid Serif;
+    font-style: italic; }
+  .bg-agency h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 3em; }
+  .bg-agency button {
+    background: #FED136;
+    color: white;
+    border-radius: 5px;
+    padding: 1% 2%;
+    border: 0;
+    margin-top: 5%;
+    font-weight: bold; }
+    .bg-agency button:hover {
+      background: #FFC107; }
 
-Backtrace:
-sass/main.scss:127
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1110:in `tok!'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:654:in `block'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:674:in `block_child'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:655:in `block'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:647:in `ruleset'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:673:in `block_child'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:123:in `stylesheet'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:39:in `parse'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"	background-image:\": expected \"{\", was \"url('../../img/...\"\A         on line 127 of sass/main.scss\A \A 122: 	}\A 123: }\A 124: /*FOOTER*/\A 125: .bg-footer{\A 126: 	background:black;\A 127: 	background-image:url('../../img/map-image.png')\A 128: 	background-repeat: no-repeat;\A 129: 	background-size:100%;\A 130: 	height:50%;\A 131: 	padding:23% 5px;\A 132: }"; }
+#services {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  font-family: Montserrat; }
+  #services i {
+    font-size: 3em;
+    line-height: 100px; }
+  #services .icon-services {
+    background: #FED136;
+    color: white;
+    border-radius: 100px;
+    width: 100px; }
+  #services .text-services {
+    margin-bottom: 5%; }
+    #services .text-services h2 {
+      font-weight: bold; }
+    #services .text-services p {
+      font-family: Droid Serif;
+      font-style: italic;
+      color: #828597; }
+  #services .row:nth-child(2) h4 {
+    padding: 3% 0;
+    font-weight: bold; }
+  #services .row:nth-child(2) p {
+    color: #828597;
+    font-family: Droid Serif; }
+
+#portfolio {
+  background: #F7F7F7;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  text-align: center;
+  font-family: Montserrat; }
+  #portfolio h2 {
+    font-weight: bold; }
+  #portfolio p {
+    padding: 2% 0; }
+  #portfolio img {
+    width: 100%; }
+  #portfolio .text-portfolio {
+    background: white;
+    padding: 2% 1%;
+    margin-bottom: 15%; }
+    #portfolio .text-portfolio h4 {
+      font-weight: bold; }
+    #portfolio .text-portfolio p {
+      font-family: Droid Serif;
+      color: #828597; }
+
+/*ABOUT US*/
+#about img {
+  margin-bottom: 25%;
+  border-radius: 100px;
+  width: 80%;
+  border: 4px solid #F1F1F1; }
+#about .text-left {
+  position: relative;
+  left: 650px; }
+
+/*TEAM*/
+.team {
+  text-align: center;
+  padding: 10% 0;
+  background: #F7F7F7; }
+  .team h2 {
+    font-weight: bold; }
+  .team p, .team span {
+    font-family: Droid Serif;
+    color: #828597; }
+  .team p:nth-child(3) {
+    padding: 0 20%;
+    margin-top: 5%; }
+  .team img {
+    margin-top: 10%;
+    width: 60%;
+    border-radius: 100%;
+    border: 5px solid white; }
+  .team li {
+    list-style: none;
+    display: inline-block;
+    text-align: center; }
+  .team .social-media {
+    margin-top: 5%; }
+  .team .icon-circle {
+    border-radius: 100%;
+    background-color: #303333;
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+    display: inline-block;
+    width: 1.7em;
+    height: 1.7em;
+    line-height: 1.9em;
+    vertical-align: middle;
+    margin: 0 2%; }
+
+/*LOGOS*/
+.logos {
+  padding: 5% 0; }
+  .logos img {
+    width: 80%; }
+
+/*CONTACT US*/
+.bg-contact {
+  background: black;
+  background-image: url("../../img/map-image.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 50%;
+  padding: 8% 5px; }
+  .bg-contact h2 {
+    font-weight: bold;
+    color: white;
+    text-align: center; }
+  .bg-contact p {
+    font-family: Droid Serif;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5%; }
+  .bg-contact input {
+    width: 85%;
+    margin-bottom: 5%;
+    float: right;
+    padding: 2% 2%;
+    border-radius: 5px;
+    border: 0px; }
+  .bg-contact textarea {
+    border: 0;
+    border-radius: 5px;
+    padding: 4% 0 0 3%; }
+
+/*FOOTER*/
+footer {
+  padding: 3% 0; }
+  footer p {
+    color: black; }
+  footer .social-circle {
+    border-radius: 100%;
+    background-color: #303333;
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+    display: inline-block;
+    width: 1.7em;
+    height: 1.7em;
+    line-height: 1.9em;
+    margin: 0 2%;
+    text-align: center; }
+    footer .social-circle:hover {
+      color: #FED136; }
+  footer a {
+    text-decoration: none;
+    color: #FED136; }
+    footer a:hover {
+      color: black; }
+
+/*# sourceMappingURL=main.css.map */
