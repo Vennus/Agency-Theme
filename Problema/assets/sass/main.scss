@@ -16,11 +16,17 @@ header{
 			}
 		}
 	}
-	h1{
+	.navbar-header{
 		margin-top: 1%;
-		font-size: 1.8em;
+	}
+	.title{
+		font-size: 2em;
 		color:#FED136;
 		font-family: Kaushan Script;
+		text-decoration:none;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 }
 .bg-agency{
